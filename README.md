@@ -67,3 +67,7 @@ const selectedNode = {
   @click-node=${(event) => alert(event.detail.name)}
 ></pipeline-graph>
 ```
+
+## Storybook
+
+[view storybook](https://taeuk-gang.github.io/pipeline-graph-webcomponent/?path=/story/pipeline--example)
