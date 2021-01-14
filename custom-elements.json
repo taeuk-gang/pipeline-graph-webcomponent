@@ -1,0 +1,149 @@
+{
+  "version": 2,
+  "tags": [
+    {
+      "name": "pipeline-graph",
+      "description": "파이프라인 그래프",
+      "properties": [
+        {
+          "name": "stages",
+          "type": "Array",
+          "description": "stage",
+          "default": [
+            {
+              "name": "SUCCESS",
+              "children": [],
+              "state": "SUCCESS",
+              "completePercent": 50,
+              "id": 1587,
+              "type": "STAGE"
+            }, 
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "QUEUED",
+                  "children": [],
+                  "state": "QUEUED",
+                  "completePercent": 50,
+                  "id": 1589,
+                  "type": "PARALLEL"
+                }, 
+                {
+                  "name": "UNSTABLE",
+                  "children": [],
+                  "state": "UNSTABLE",
+                  "completePercent": 50,
+                  "id": 1590,
+                  "type": "PARALLEL"
+                },
+                {
+                  "name": "ABORTED",
+                  "children": [],
+                  "state": "ABORTED",
+                  "completePercent": 50,
+                  "id": 15923,
+                  "type": "PARALLEL"
+                }
+              ],
+              "state": "ABORTED",
+              "completePercent": 50,
+              "id": 1588,
+              "type": "STAGE"
+            }, 
+            {
+              "name": "PAUSED",
+              "children": [],
+              "state": "PAUSED",
+              "completePercent": 50,
+              "id": 1595,
+              "type": "STAGE"
+            }, 
+            {
+              "name": "SKIPPED",
+              "children": [],
+              "state": "skipped",
+              "completePercent": 50,
+              "id": 1596,
+              "type": "STAGE"
+            }, 
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "RUNNING",
+                  "children": [],
+                  "state": "RUNNING",
+                  "completePercent": 50,
+                  "id": 1598,
+                  "type": "PARALLEL"
+                }, 
+                {
+                  "name": "NOT_BUILT",
+                  "children": [],
+                  "state": "NOT_BUILT",
+                  "completePercent": 50,
+                  "id": 1599,
+                  "type": "PARALLEL"
+                },
+                {
+                  "name": "FAILURE",
+                  "children": [],
+                  "state": "FAILURE",
+                  "completePercent": 50,
+                  "id": 159932,
+                  "type": "PARALLEL"
+                }
+              ],
+              "state": "SKIPPED",
+              "completePercent": 50,
+              "id": 1597,
+              "type": "STAGE"
+            }, 
+            {
+              "name": "UNKNOWN",
+              "children": [],
+              "state": "UNKNOWN",
+              "completePercent": 50,
+              "id": 1600,
+              "type": "STAGE"
+            }
+          ]
+        },
+        {
+          "name": "layout",
+          "type": "Object",
+          "description": "layout",
+          "default": {
+            "nodeSpacingH": 120,
+            "parallelSpacingH": 120,
+            "nodeSpacingV": 70,
+            "nodeRadius": 12,
+            "terminalRadius": 7,
+            "curveRadius": 12,
+            "connectorStrokeWidth": 2,
+            "labelOffsetV": 20,
+            "smallLabelOffsetV": 15,
+            "ypStart": 55
+          }
+        },
+        {
+          "name": "selectedNode",
+          "type": "Object",
+          "description": "selectedNode",
+          "default": {
+            "name": "SUCCESS",
+            "children": [],
+            "state": "SUCCESS",
+            "completePercent": 50,
+            "id": 1587,
+            "type": "STAGE"
+          }
+        }
+      ],
+      "events": [],
+      "slots": [],
+      "cssProperties": []
+    }
+  ]
+}
